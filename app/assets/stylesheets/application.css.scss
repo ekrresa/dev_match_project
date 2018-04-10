@@ -17,6 +17,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Background Gradient
 .navbar, .homepage {
   //Gradient provided by https://twitter.com/_ighosh
   background: #093028;  /* fallback for old browsers */
@@ -24,14 +25,25 @@
   background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+// Navbar Styles
 .navbar {
   border: none;
 }
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
 
+// Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
+// Homepage Styles
 .homepage {
   color: white;
   margin-top: -20px;
