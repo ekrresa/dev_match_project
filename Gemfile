@@ -12,16 +12,16 @@ gem 'rails', '5.1.6'
 # Use Puma as the app server
 gem 'puma', '3.9.1'
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0.6'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.2.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.2.2'
+gem 'coffee-rails'
 # Use JQuery as the javascript library
-gem 'jquery-rails', '4.1.1'
+gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -42,6 +42,9 @@ gem 'font-awesome-sass', '~> 5.0.9'
 
 # Use Hirb for better database table display in console
 gem 'hirb', '0.7.3'
+
+# Use Devise for user authentication
+gem 'devise'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
