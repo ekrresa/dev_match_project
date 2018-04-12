@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <!--NavBar-->
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class='container'>
         <div class="navbar-header">
@@ -33,9 +34,14 @@
         
       </div>
     </nav>
-
-      <%= yield %>
-
     
+    <div class="container text-center">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>
+
+    <%= yield %>
+
   </body>
 </html>
